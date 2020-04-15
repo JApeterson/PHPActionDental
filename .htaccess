@@ -1,0 +1,8 @@
+########## Begin - Redirecting non-www request to www
+#
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.actiondentalcheyenne.com [NC]
+RewriteRule (.*) http://actiondentalcheyenne.com/$1 [L,R=301]
+#
+########## End - Redirecting non-www request to www
+
